@@ -1,10 +1,10 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="COMP2007_S2016_Lesson5C.Contact" %>
+﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="university1.Contact" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-6 text-center">
-                <h1>Contact us</h1>
+                <h1>Contact Us</h1>
             </div>
         </div>
         <div class="row">
@@ -13,7 +13,7 @@
                     <div class="panel-heading">Contact Info</div>
                     <div class="panel-body">
                         <address>
-                            <strong>Tom Tsiliopoulos</strong><br>
+                            <strong>Gurpanth Singh</strong><br>
                             1 Toronto Street<br>
                             Barrie, ON L9L 9L9<br>
                             <abbr title="Phone">TEL:</abbr>

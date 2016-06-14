@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace COMP2007_S2016_Lesson5C
+namespace university1
 {
     public partial class Courses : System.Web.UI.Page
     {

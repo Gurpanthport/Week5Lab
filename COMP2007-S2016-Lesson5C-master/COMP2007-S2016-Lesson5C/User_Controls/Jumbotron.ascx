@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Jumbotron.ascx.cs" Inherits="COMP2007_S2016_Lesson5C.User_Controls.Jumbotron" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Jumbotron.ascx.cs" Inherits="university1.User_Controls.Jumbotron" %>
 
 <div class="container-fluid">
     <div class="row">

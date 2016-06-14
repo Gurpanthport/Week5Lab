@@ -9,11 +9,11 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2B3A60CB-AB3B-42DE-9DA3-CFFECC0E4B28}</ProjectGuid>
+    <ProjectGuid>{C1FA23A3-9517-4763-BFE6-439AEF773448}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>COMP2007_S2016_Lesson5C</RootNamespace>
+    <RootNamespace>university1</RootNamespace>
     <AssemblyName>COMP2007-S2016-Lesson3C</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>

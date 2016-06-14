@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
  * @version: 0.0.2 - updated SetActivePage Method to include new links
  */
 
-namespace COMP2007_S2016_Lesson5C
+namespace university1
 {
     public partial class Navbar : System.Web.UI.UserControl
     {

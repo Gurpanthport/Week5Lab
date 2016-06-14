@@ -6,16 +6,16 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 // using statements required for EF DB access
-using COMP2007_S2016_Lesson5C.Models;
+using university1.Models;
 using System.Web.ModelBinding;
 
-namespace COMP2007_S2016_Lesson5C
+namespace university1
 {
     public partial class StudentDetails : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if((!IsPostBack) && (Request.QueryString.Count > 0))
+            if ((!IsPostBack) && (Request.QueryString.Count > 0))
             {
                 this.GetStudent();
             }
@@ -23,19 +23,19 @@ namespace COMP2007_S2016_Lesson5C
 
         protected void GetStudent()
         {
-            // populate teh form with existing data from the database
+            // populate the form with existing student data from the db
             int StudentID = Convert.ToInt32(Request.QueryString["StudentID"]);
 
             // connect to the EF DB
             using (DefaultConnection db = new DefaultConnection())
             {
-                // populate a student object instance with the StudentID from the URL Parameter
+                // populate a student instance with the StudentID from the URL parameter
                 Student updatedStudent = (from student in db.Students
                                           where student.StudentID == StudentID
                                           select student).FirstOrDefault();
 
                 // map the student properties to the form controls
-                if(updatedStudent != null)
+                if (updatedStudent != null)
                 {
                     LastNameTextBox.Text = updatedStudent.LastName;
                     FirstNameTextBox.Text = updatedStudent.FirstMidName;
@@ -43,6 +43,7 @@ namespace COMP2007_S2016_Lesson5C
                 }
             }
         }
+
 
         protected void CancelButton_Click(object sender, EventArgs e)
         {
@@ -61,9 +62,9 @@ namespace COMP2007_S2016_Lesson5C
 
                 int StudentID = 0;
 
-                if(Request.QueryString.Count > 0) // our URL has a StudentID in it
+                if (Request.QueryString.Count > 0)
                 {
-                    // get the id from the URL
+                    // get the id from url
                     StudentID = Convert.ToInt32(Request.QueryString["StudentID"]);
 
                     // get the current student from EF DB
@@ -79,12 +80,13 @@ namespace COMP2007_S2016_Lesson5C
 
                 // use LINQ to ADO.NET to add / insert new student into the database
 
-                if (StudentID == 0) {
+                // check to see if a new student is being added
+                if (StudentID == 0)
+                {
                     db.Students.Add(newStudent);
                 }
-                
 
-                // save our changes - also updates and inserts
+                // save our changes - run an update
                 db.SaveChanges();
 
                 // Redirect back to the updated students page

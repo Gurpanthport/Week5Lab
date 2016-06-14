@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP2007_S2016_Lesson5C.User_Controls
+namespace university1.User_Controls
 {
 
 
